@@ -43,7 +43,7 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 ```
 Generate the Go code fro your .proto files:
 ```bash
-protoc --go_out=. --go-grpc_out=. proto/service.proto
+protoc --go_out=. --go-grpc_out=. proto/course_category.proto
 ```
 #### 4. Run the Server
 Start the gRPC server:
@@ -56,7 +56,7 @@ Start Evans in interactive mode:
 evans -r repl
 ```
 From the Evans CLI:
- - Select your proto file: proto/service.proto
+ - Select your proto file: proto/course_category.proto
  - Call gRPC methods and view responses.
 
  ---
